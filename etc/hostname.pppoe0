@@ -1,0 +1,9 @@
+# Use this if you are on DSL. Follow these steps:
+# 1- Read PPPOE(4) man page. 
+# 2- Configure your modem as a bridge.
+# 3- Adjust and uncomment the following. Keep the quotes around credentials. 
+# 4- Make sure you read PPPOE(4) man page.
+
+#net 0.0.0.0 255.255.255.255 NONE mtu 1492 pppoedev em0 authproto pap authname 'USERNAME_PROVIDED _BY_ISP' authkey 'PASSWORD_PROVIDED_BY_ISP' up 
+#dest 0.0.0.1
+#!/sbin/route add default -ifp pppoe0 0.0.0.1
