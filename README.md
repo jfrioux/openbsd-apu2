@@ -105,10 +105,6 @@ rsa 2048 bits 0.009785s 0.000316s    102.2   3168.6
 dsa 2048 bits 0.003073s 0.003696s    325.4    270.5
 ```
 
-## Caveats
-- 802.11n is not supported on OpenBSD
-- still testing the stability - so far so good
-
 ## License
 BSD
 
